@@ -6,7 +6,7 @@ import json
 location = input("Enter city/state name: ") 
 # to store api key to secure it
 
-url = "http://api.openweathermap.org/data/2.5/weather?q=%s&appid=c6b8070940a2e233f1b58b7a52d32d4f" % location
+url = "http://api.openweathermap.org/data/2.5/weather?q=%s&appid=(Your api key)" % location
 response = requests.get(url)
 response.raise_for_status()
 
